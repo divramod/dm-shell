@@ -7,7 +7,7 @@ var task = {};
 // =========== [ task.start() ] ===========
 task.start = co.wrap(function*(command) {
     try {
-        console.log(command);
+        //console.log(command);
         var command = command || process.argv[3] || undefined;
         var spawn = require('child_process').spawnSync;
         var myProcess = spawn('sh', ['-c', command], {

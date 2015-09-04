@@ -12,7 +12,7 @@ job.start = co.wrap(function*() {
     var questions = [{
         type: "input",
         name: "q1",
-        message: "q1"
+        message: "bla"
     }, {
         type: "input",
         name: "q2",
