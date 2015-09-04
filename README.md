@@ -6,8 +6,10 @@ A helper for interacting with the shell in nodejs.
 // install dm-shell globally
 npm install -g dm-shell
 
-// clone repository
-git clone git@github.com:divramod/dm-shell.git
+// fork dm-shell.git
+
+// clone your fork
+git clone git@github.com:your_github_username/dm-shell.git
 
 // cd into repository
 cd dm-shell
@@ -33,4 +35,5 @@ dm-shell test your_task_name
 
 // edit tasks/your_task_name/test/test.js
 
+// create a pull request: https://help.github.com/articles/creating-a-pull-request/
 ```
