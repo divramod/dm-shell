@@ -1,35 +1,35 @@
 # dm-shell
+A helper for interacting with the shell in nodejs.
 
-## Description
-*
-
-## Run
-```
-dms [yml]
-dm-shell [yml]
-```
-
-## Install
-
-```
-npm install dm-shell -g
-```
-
-## Tasks
-
-### spawn
-* async spawn with inheriation stdio
-* examples 
+## contribute
 ```javascript
-alias spawn // 
-```
+// install dm-shell globally
+npm install -g dm-shell
 
-## Config
-* you can place a .dm-shell.json file in your home directory (~/.dm-shell.json)
-* the following things are allowed at the moment
-```javascript
-{
-}
-```
+// clone repository
+git clone git@github.com:divramod/dm-shell.git
 
-## Lessons Learned
+// cd into repository
+cd dm-shell
+
+// npm install
+npm install
+
+// link the global dm-shell installation to the local repository you cd'ed into
+dm-shell local
+
+// create synchronous task with tests
+// dm-shell taskAdd [sync [taskName]]
+dm-shell taskAdd sync your_task_name
+
+// create asynchronous tasks with test (wrapped in co)
+// dm-shell taskAdd [asyn [taskName]]
+dm-shell taskAdd async your_task_name
+
+// run tests
+dm-shell test your_task_name
+
+// edit tasks/your_task_name/index.js
+
+// edit tasks/your_task_name/test/test.js
+```

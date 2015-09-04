@@ -8,11 +8,12 @@ jobs.index = co.wrap(function*() {
         // =========== [ get params from user input ] ===========
         var argv2 = process.env.dmnJob || process.argv[2] || "help";
 
-        // =========== [ test ] ===========
-        if (["test", "-test", "t", "-t"].indexOf(argv2) > -1) {
-            var task = require("./tasks/test/index.js");
+        // =========== [ example ] ===========
+        if (["example"].indexOf(argv2) > -1) {
+          var task = require("./tasks/example/index.js");
             yield task.start();
         }
+
         // =========== [ spawn ] ===========
         else if (['spawn'].indexOf(argv2) > -1) {
             var task = require("./tasks/spawn/index.js");
@@ -21,6 +22,16 @@ jobs.index = co.wrap(function*() {
 
         // automatically add tasks here
 
+        // =========== [ spawnAsync ] ===========
+        else if (['spawnAsync'].indexOf(argv2) > -1) {
+            var task = require("./tasks/spawnAsync/index.js");
+            task.start();
+        }
+        // =========== [ spawnSync ] ===========
+        else if (['spawnSync','ss'].indexOf(argv2) > -1) {
+            var task = require("./tasks/spawnSync/index.js");
+            task.start();
+        }
 
         // =========== [ help ] ===========
         else {
