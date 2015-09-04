@@ -6,7 +6,7 @@ A helper for interacting with the shell in nodejs.
 // install dm-shell globally
 npm install -g dm-shell
 
-// fork dm-shell.git
+// fork dm-shell.git: https://github.com/divramod/dm-shell
 
 // clone your fork
 git clone git@github.com:your_github_username/dm-shell.git
